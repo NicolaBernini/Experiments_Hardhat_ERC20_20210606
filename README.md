@@ -41,7 +41,7 @@ Enter the Hardhat Docker Container or use it native to run from the base project
 npx hardhat test
 ```
 
-this will create the scaffolding
+this will start the Hardhat interactive CLI to create the project scaffolding
 
 
 
