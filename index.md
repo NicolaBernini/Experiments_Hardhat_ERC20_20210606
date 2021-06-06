@@ -1,37 +1,85 @@
-## Welcome to GitHub Pages
 
-You can use the [editor on GitHub](https://github.com/NicolaBernini/Experiments_Hardhat_ERC20_20210606/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+# Overview 
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+This is a simple example about how to use [Hardhat](https://hardhat.org/) by testing a simple ERC20 Token 
 
-### Markdown
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-```markdown
-Syntax highlighted code block
+# 1. Requirements 
 
-# Header 1
-## Header 2
-### Header 3
+## 1.1 Hardhat 
 
-- Bulleted
-- List
+Install Hardhat native or Dockerized 
 
-1. Numbered
-2. List
+In this example I am using the version I have dockerized, please find the instructions in this [GitHub Repo](https://nicolabernini.github.io/Hardhat-Dockerized/)
 
-**Bold** and _Italic_ and `Code` text
 
-[Link](url) and ![Image](src)
+
+
+
+## 1.2 OpenZeppelin 
+
+- The `contracts/Token1.sol` needs ERC20 from OpenZeppelin so it is required to clone that repo locally 
+
+Go to `contracts` and run
+
+```
+git clone https://github.com/OpenZeppelin/openzeppelin-contracts.git
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-### Jekyll Themes
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/NicolaBernini/Experiments_Hardhat_ERC20_20210606/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
 
-### Support or Contact
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+# 2. Create the project 
+
+## 2.1 Scaffolding 
+
+Enter the Hardhat Docker Container or use it native to run from the base project directory 
+
+```
+npx hardhat test
+```
+
+this will start the Hardhat interactive CLI to create the project scaffolding
+
+
+
+## 2.2 Replace the files 
+
+Copy the files in the `to_copy` dir into the related positions, specified by the container dir so 
+
+- `to_copy/contracts/*` --> `contracts/*`
+
+- `to_copy/test/*` --> `test/*`
+
+
+
+
+
+## 3. Run the tests 
+
+Run the tests with 
+
+```
+npx hardhat test
+```
+
+
+
+The result should be 
+
+![Img1](blob/main/images/Img1.png)
+
+
+
+
+
+
+
+# Explanation 
+
+For the explanation check 
+
+
+
