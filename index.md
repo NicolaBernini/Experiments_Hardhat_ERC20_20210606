@@ -69,7 +69,7 @@ npx hardhat test
 
 The result should be 
 
-![Img1](blob/main/images/Img1.png)
+![Img1](https://raw.githubusercontent.com/NicolaBernini/Experiments_Hardhat_ERC20_20210606/main/images/Img1.png)
 
 
 
